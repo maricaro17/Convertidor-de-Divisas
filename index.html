@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Convertidor de Divisas</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 class="title">Convertidor de Divisas</h1>
+        <div class="contenedor-img">
+            <img class="img-divisas" src="./images/img-divisas.png" alt="">
+        </div>
+        <div class="cantidad">
+            <input id="cash" type="text">
+        </div>
+
+        <div class="contenedor-button">
+            <select id="moneda-from" name="de" onchange="selectedFrom()">
+            </select>
+            <select id="moneda-to" name="a" onchange="selectedTo()">
+            </select>
+            <button class="btn-convertir" onclick="convertirDivisa()">Convertir</button>
+        </div>
+        <div id="result-container">
+            <p id="result">Operacion Realizada:</p>
+            <br>
+            <p id="money"></p>
+            <p id="moneda-origen"></p>
+            <p id="moneda-destino"></p>
+            <p id="tasa-cambio"></p>
+            <p id="conversion"></p>
+        </div>
+        <div id="alert-error" class="container-alert" style="display: none;">
+            <p id="alert"></p>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
