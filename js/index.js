@@ -4,6 +4,14 @@ const monedaFrom = document.getElementById("moneda-from");
 const monedaTo = document.getElementById("moneda-to");
 const cash = document.getElementById("cash");
 const fragment = document.createDocumentFragment();
+
+var numero = document.getElementById('cash');
+
+function comprueba(valor){
+  if(valor.value < 1){
+    valor.value = 1;
+  }
+}
 cash.addEventListener("keypress", function () {
   if (isNaN(cash.value)) {
     containerAlertError.setAttribute("style", "display:block");
