@@ -5,9 +5,9 @@ const monedaTo = document.getElementById("moneda-to");
 const cash = document.getElementById("cash");
 const fragment = document.createDocumentFragment();
 
-var numero = document.getElementById('cash');
+const numero = document.getElementById('cash');
 
-function comprueba(valor){
+function validacion(valor){
   if(valor.value < 1){
     valor.value = 1;
   }
